@@ -9,8 +9,6 @@ interface TabComponentProps {
 
 export default function TabComponent(props: TabComponentProps) {
   const setActiveTab = (e: React.MouseEvent<HTMLDivElement>) => {
-    // console.log("Children", e.currentTarget.innerText)
-    e.currentTarget.classList.add("active");
     props.clickHandler(e.currentTarget.innerText);
   };
 

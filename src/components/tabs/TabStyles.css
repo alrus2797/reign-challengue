@@ -25,6 +25,9 @@
 }
 
 .active {
-  color: #1797ff;
   border: solid 1px #1797ff;
+}
+
+.active span {
+  color: #1797ff;
 }
