@@ -4,13 +4,12 @@ import TabComponent from "../tabs/TabComponent";
 import "./ContentStyles.css";
 
 export default function ContentComponent() {
-  const [activeTab, setActiveTab] = React.useState("All");
-
   const tabs = ["All", "Favs"];
+  const [activeTab, setActiveTab] = React.useState(tabs[0]);
 
-  const handleTabClick = (index: string) => {
-    console.log(index);
-    setActiveTab(index);
+  const handleTabClick = (selectedTab: string) => {
+    console.log(selectedTab);
+    setActiveTab(selectedTab);
   };
   return (
     <div className="content">
