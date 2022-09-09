@@ -1,0 +1,30 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tab {
+  width: 98px;
+  height: 31px;
+  /* padding: 3px 0; */
+  text-align: center;
+  border-radius: 2px;
+  border: solid 1px #d6d6d6;
+}
+
+.tab > span {
+  display: inline-flex;
+  height: 28px;
+  color: #606060;
+  align-items: center;
+}
+.tab:hover {
+  border: solid 1px #1797ff;
+  cursor: pointer;
+}
+
+.active {
+  color: #1797ff;
+  border: solid 1px #1797ff;
+}
