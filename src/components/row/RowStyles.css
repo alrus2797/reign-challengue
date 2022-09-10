@@ -10,3 +10,7 @@
 .center {
   justify-content: center;
 }
+
+.mb {
+  margin-bottom: 3rem;
+}

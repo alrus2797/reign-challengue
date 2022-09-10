@@ -13,7 +13,7 @@
   border: solid 1px #d6d6d6;
 }
 
-.tab > span {
+.tab span {
   display: inline-flex;
   height: 100%;
   color: #606060;
