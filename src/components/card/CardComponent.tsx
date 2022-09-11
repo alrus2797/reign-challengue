@@ -4,7 +4,6 @@ import {ReactComponent as TimeIcon} from '../../assets/icons/iconmonstr-time-2.s
 import {ReactComponent as FavoriteEmptyIcon} from '../../assets/icons/fav-empty.svg';
 import {ReactComponent as FavoriteFilledIcon} from '../../assets/icons/fav-filled.svg';
 import getRelativeTime from "../../helpers/readableTime";
-import { click } from "@testing-library/user-event/dist/click";
 
 interface CardComponentProps {
   title: string;
