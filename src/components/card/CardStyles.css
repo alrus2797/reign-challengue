@@ -1,10 +1,71 @@
 .card{
-  width: 550px;
-  height: 90px;
-  /* margin: 38px 40px 30px 150px; */
-  padding: 0 0 0 26px;
-  opacity: 0.8;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 40%;
+  margin: 10px 10px;
+  padding: 0px 0 0 26px;
   border-radius: 6px;
   border: solid 1px #979797;
   background-color: #fff;
+  align-self: center;
+}
+
+.card-time{
+  /* width: 107px;
+  height: 13px; */
+  display: flex;
+  margin: 10px 0 7px 0px;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #767676;
+  align-items: center;
+  offset-distance: 5px;
+}
+
+.fav-icon{
+  opacity: 1;
+}
+
+.time-icon{
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.time-text{
+  margin: 0 0 0 5px;
+}
+
+.card-title{
+  width: calc(100% - 68px);
+  height: 20px;
+  margin: 6px 68px 24px 0;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 0.25px;
+  text-overflow: ellipsis;
+  color: var(--brownish-grey);
+}
+
+.fav-container{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 100%;
+  /* margin: 0 0 0 16px; */
+  /* padding: 35px 22px 33px; */
+  border-radius: 0 5px 5px 0;
+  background-color: #60606015;
+  right: 0;
 }

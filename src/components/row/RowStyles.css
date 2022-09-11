@@ -11,6 +11,16 @@
   justify-content: center;
 }
 
+.dropdown-row{
+  margin-left: 150px;
+}
+
 .mb {
   margin-bottom: 3rem;
+  
+}
+
+.card-row{
+  display: flex;
+  justify-content: center;
 }
