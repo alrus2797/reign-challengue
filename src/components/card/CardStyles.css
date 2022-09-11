@@ -12,6 +12,10 @@
   align-self: center;
 }
 
+.card:hover{
+  opacity: 0.7;
+}
+
 .card-time{
   /* width: 107px;
   height: 13px; */
@@ -30,6 +34,12 @@
 
 .fav-icon{
   opacity: 1;
+}
+
+.fav-icon:hover{
+  opacity: 0.5;
+  fill: red;
+  cursor: pointer;
 }
 
 .time-icon{

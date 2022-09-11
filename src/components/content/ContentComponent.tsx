@@ -54,9 +54,11 @@ export default function ContentComponent() {
           activeTab={activeTab}
         />
       </RowComponent>
-      <RowComponent className="dropdown-row mb">
+
+
+      { activeTab === "All" && <RowComponent className="dropdown-row mb">
         <DropdownComponent options={queries} clickHandler={handleFilterClick} currentOption={filter}></DropdownComponent>
-      </RowComponent>
+      </RowComponent>}
 
       <div className="">
         <RowComponent className="mb card-row">
@@ -67,6 +69,7 @@ export default function ContentComponent() {
               title={news.story_title}
               time={news.created_at.toLocaleString()}
               author={news.author}
+              url = {news.story_url}
               favorite={false}
             />)
           ))}

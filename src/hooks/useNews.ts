@@ -11,10 +11,16 @@ interface newsHookProps {
 export default function useNews(props: newsHookProps) {
   const [newsPage, setNewsPage] = useState<NewsPage | null>();
   const getNews = useCallback(() => {
-    NewsService.getNews(props.query, props.page).then((response) => {
-      setNewsPage(response);
-    });
-  }, [props.query, props.page]);
+    if (props.activeTab === "All"){
+      NewsService.getNews(props.query, props.page).then((response) => {
+        setNewsPage(response);
+      });
+    }
+    else{
+      console.log("Trayendo favs", localStorage.getItem("FavNews"))
+      setNewsPage(localStorage.getItem("FavNews") ? JSON.parse(localStorage.getItem("FavNews") as string) : null);
+    }
+  }, [props.query, props.page, props.activeTab]);
 
   useEffect(() => {
     getNews()
