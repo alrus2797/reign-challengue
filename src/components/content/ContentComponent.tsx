@@ -66,10 +66,10 @@ export default function ContentComponent() {
             news.story_title && news.author && news.created_at && news.story_url && (
             <CardComponent
               key={news.objectID}
-              title={news.story_title}
-              time={news.created_at.toLocaleString()}
+              story_title={news.story_title}
+              created_at={news.created_at.toLocaleString()}
               author={news.author}
-              url = {news.story_url}
+              story_url = {news.story_url}
               favorite={false}
             />)
           ))}
